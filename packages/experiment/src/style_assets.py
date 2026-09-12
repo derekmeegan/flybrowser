@@ -7,7 +7,7 @@ FONTS=OUT/'fonts';FONTS.mkdir(exist_ok=True)
 for name in ['Inter.ttf','Inter-OFL.txt','JetBrainsMono.ttf','JetBrainsMono-OFL.txt']:
  shutil.copy2(ROOT.parents[1]/'apps/web/public/assets'/name,FONTS/name)
 source=ROOT/'vendor/flybody/flybody/fruitfly/assets';dest=OUT/'lowpoly-meshes';dest.mkdir(exist_ok=True)
-if not (source/'fruitfly.xml').exists():raise SystemExit('Run npm run experiment:browser to fetch Flybody first.')
+if not (source/'fruitfly.xml').exists():raise SystemExit('Run pnpm experiment:browser to fetch Flybody first.')
 report=[]
 for path in sorted(source.glob('*.obj')):
  mesh=trimesh.load(path,force='mesh',process=False);before=len(mesh.faces)

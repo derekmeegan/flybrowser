@@ -58,4 +58,4 @@ fonts = ROOT / 'artifacts/fonts'
 fonts.mkdir(exist_ok=True)
 for name in ['Inter.ttf', 'JetBrainsMono.ttf', 'Inter-OFL.txt', 'JetBrainsMono-OFL.txt']:
     shutil.copy2(ASSETS / name, fonts / name)
-print('Python, circuit, fonts and checkpoints are ready. Browser tools are optional: npm run experiment:browser')
+print('Python, circuit, fonts and checkpoints are ready. Browser tools are optional: pnpm experiment:browser')

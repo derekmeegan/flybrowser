@@ -26,9 +26,9 @@ for (const name of ['stagehand', 'flybody']) {
     throw new Error(`${directory} must be at ${source.commit}. Move the existing checkout before rerunning setup.`);
   }
 }
-const pnpm = ['--yes', '--package=node@24.18.0', '--package=pnpm@11.10.0', 'pnpm', '--dir', 'vendor/stagehand'];
-run('npx', [...pnpm, 'install', '--frozen-lockfile']);
-run('npx', [...pnpm, 'exec', 'turbo', 'build', '--filter=@browserbasehq/stagehand', '--filter=@browserbasehq/stagehand-extension']);
+const pnpm = ['--dir', 'vendor/stagehand'];
+run('pnpm', [...pnpm, 'install', '--frozen-lockfile']);
+run('pnpm', [...pnpm, 'exec', 'turbo', 'build', '--filter=@browserbasehq/stagehand', '--filter=@browserbasehq/stagehand-extension']);
 run(process.execPath, ['src/install_evals_task.mjs']);
-run('npx', [...pnpm, 'exec', 'turbo', 'build', '--filter=@browserbasehq/stagehand-evals']);
+run('pnpm', [...pnpm, 'exec', 'turbo', 'build', '--filter=@browserbasehq/stagehand-evals']);
 console.log('Pinned Stagehand, extension, evals task and Flybody assets are ready.');

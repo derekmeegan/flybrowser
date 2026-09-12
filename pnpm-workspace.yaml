@@ -1,0 +1,6 @@
+packages:
+  - 'apps/*'
+  - 'packages/*'
+allowBuilds:
+  # Use the prebuilt platform bindings supplied through optional dependencies.
+  unrs-resolver: false

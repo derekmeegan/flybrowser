@@ -8,14 +8,14 @@ A simulated fly circuit learns a small browser task: search for a fruit, choose 
 
 ## Run the app
 
-Use Node.js 24.18+ and npm. The video, scene and replay data are included; no API keys or Python setup are needed for the website.
+Use Node.js 24.18+ and pnpm 11.10.0. The video, scene and replay data are included; no API keys or Python setup are needed for the website.
 
 ```sh
-npm ci
-npm run dev
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-Open [localhost:3026](http://localhost:3026). `npm run build` and `npm start` run the production build; `npm run lint` checks the app.
+Open [localhost:3026](http://localhost:3026). `pnpm build` and `pnpm start` run the production build; `pnpm lint` checks the app.
 
 ```text
 apps/web/              Next.js app, replay assets and demo video
@@ -45,13 +45,13 @@ These are fresh seeds with a fixed vocabulary and engineered text inputs. Shuffl
 Install [uv](https://docs.astral.sh/uv/), then run:
 
 ```sh
-npm run experiment:setup        # Python 3.12, circuit checks, checkpoint restore
-npm run experiment:audit        # Verify weights and 1,812 recorded decisions
-npm run experiment:browser      # Build pinned Stagehand + fetch Flybody
-npm run experiment:train
-npm run experiment:train:shuffled
-npm run experiment:evaluate     # 200 live browser episodes per condition
-npm run experiment:evals        # Stagehand CLI: 16 additional smoke episodes
+pnpm experiment:setup        # Python 3.12, circuit checks, checkpoint restore
+pnpm experiment:audit        # Verify weights and 1,812 recorded decisions
+pnpm experiment:browser      # Build pinned Stagehand + fetch Flybody
+pnpm experiment:train
+pnpm experiment:train:shuffled
+pnpm experiment:evaluate     # 200 live browser episodes per condition
+pnpm experiment:evals        # Stagehand CLI: 16 additional smoke episodes
 ```
 
 Browser runs need local Chrome. Commands replace their corresponding experiment outputs. `experiment:collect` recollects rewards; `experiment:record`, `experiment:charts` and `experiment:export` regenerate presentation assets. With the app running and FFmpeg installed, `experiment:video` renders the 18-second film. `experiment:pack` updates the compressed checkpoints after training.

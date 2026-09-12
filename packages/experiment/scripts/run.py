@@ -6,6 +6,6 @@ import sys
 ROOT = Path(__file__).resolve().parents[1]
 python = ROOT / '.venv/bin/python'
 if not python.exists():
-    sys.exit('Run npm run experiment:setup first.')
+    sys.exit('Run pnpm experiment:setup first.')
 script, *args = sys.argv[1:]
 sys.exit(subprocess.call([str(python), str(ROOT / 'src' / script), *args], cwd=ROOT))
