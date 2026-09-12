@@ -58,10 +58,12 @@ def build_scene():
     box('.38 .003 .005','.26 -.255 -.141','orange')
     for x in [-.08,.60]:
         for y in [-.22,.24]:box('.012 .012 .165',f'{x} {y} -.33','metal')
-    box('.135 .135 .016','-.26 -.065 -.164','orange')
-    box('.014 .135 .145','-.40 -.065 -.035','orange')
-    box('.017 .017 .15','-.27 -.065 -.33','metal')
-    for y in [-.19,.06]:box('.12 .012 .012',f'-.27 {y} -.479','metal')
+    # Face the keyboard, leaving room between the wings and the backrest.
+    chair=[box('.135 .135 .016','.06 -.36 -.164','orange'),
+           box('.014 .135 .145','.06 -.5 -.035','orange'),
+           box('.017 .017 .15','.06 -.37 -.33','metal')]
+    chair.extend(box('.12 .012 .012',f'{x} -.37 -.479','metal') for x in [.185,-.065])
+    for part in chair:part.set('quat',f'{np.sqrt(.5)} 0 0 {np.sqrt(.5)}')
     ET.SubElement(world,'geom',type='cylinder',size='.026 .037',pos='.535 -.12 -.094',material='orange')
     ET.SubElement(world,'geom',type='cylinder',size='.022 .0008',pos='.535 -.12 -.056',material='metal')
     ET.SubElement(world,'geom',type='capsule',size='.005 .025',pos='.574 -.12 -.094',material='orange')
@@ -105,8 +107,8 @@ class FlyScene:
 
     def render(self,t=0,typing=False,celebrate=False):
         d=self.data;m=self.model;d.qpos[:]=m.qpos0
-        d.qpos[:3]=[-.19,-.07,.005+(.002*np.sin(t*2))]
-        d.qpos[3:7]=[1,0,0,0]
+        d.qpos[:3]=[.065,-.20,.005+(.002*np.sin(t*2))]
+        d.qpos[3:7]=[np.sqrt(.5),0,0,np.sqrt(.5)]
         def pose(name,value):
             j=m.joint(name);d.qpos[j.qposadr[0]]=value
         # Fold both wings over the abdomen. Small motion is purely presentational.

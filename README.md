@@ -2,7 +2,7 @@
 
 A simulated fly circuit learns a small browser task: search for a fruit, choose it, and select its ripeness. The Next.js app replays a recorded run with a 3D fly and a neuron activity map.
 
-[![A simulated fly using a browser to find a green banana](media/demo.gif)](apps/web/public/assets/fly-browser-demo.mp4)
+[![A simulated fly facing the keyboard and finding a green banana in a browser](media/demo.gif)](apps/web/public/assets/fly-browser-demo.mp4)
 
 [Watch the full-resolution demo](apps/web/public/assets/fly-browser-demo.mp4) · 18 seconds
 

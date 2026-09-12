@@ -14,8 +14,8 @@ import { Replay, replayState, TIMING } from "@/lib/replay";
  * 18000ms   loop, including the authored fly motion
  */
 const CAMERA = {
-  position: [-0.55, 0.46, 1.22],
-  target: [0.1, -0.03, 0],
+  position: [1.02, 0.5, 0.97],
+  target: [0.25, 0.03, 0.02],
   fov: 42,
   minDistance: 0.55,
   maxDistance: 2.3,
@@ -100,7 +100,7 @@ export default function FlyScene({
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.setClearColor(0xf2ede9);
       renderer.shadowMap.enabled = true;
-      renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+      renderer.shadowMap.type = THREE.PCFShadowMap;
       renderer.outputColorSpace = THREE.SRGBColorSpace;
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
       renderer.toneMappingExposure = 1.05;
@@ -116,23 +116,9 @@ export default function FlyScene({
       root.rotation.x = -Math.PI / 2;
       world.add(root);
       const camera = new THREE.PerspectiveCamera(CAMERA.fov, 1, 0.01, 30);
-      const isVideo =
-        new URLSearchParams(window.location.search).get("video") === "1";
-      camera.position.set(
-        ...((isVideo ? [0.12, 0.4, 1.28] : CAMERA.position) as [
-          number,
-          number,
-          number,
-        ]),
-      );
+      camera.position.fromArray(CAMERA.position);
       const controls = new OrbitControls(camera, renderer.domElement);
-      controls.target.set(
-        ...((isVideo ? [0.1, 0.08, 0] : CAMERA.target) as [
-          number,
-          number,
-          number,
-        ]),
-      );
+      controls.target.fromArray(CAMERA.target);
       controls.enableDamping = true;
       controls.dampingFactor = CAMERA.damping;
       controls.minDistance = CAMERA.minDistance;
