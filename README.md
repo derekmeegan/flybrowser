@@ -2,6 +2,10 @@
 
 A simulated fly circuit learns a small browser task: search for a fruit, choose it, and select its ripeness. The Next.js app replays a recorded run with a 3D fly and a neuron activity map.
 
+[![A simulated fly using a browser to find a green banana](media/demo.gif)](apps/web/public/assets/fly-browser-demo.mp4)
+
+[Watch the full-resolution demo](apps/web/public/assets/fly-browser-demo.mp4) · 18 seconds
+
 ## Run the app
 
 Use Node.js 24.18+ and npm. The video, scene and replay data are included; no API keys or Python setup are needed for the website.
@@ -16,7 +20,7 @@ Open [localhost:3026](http://localhost:3026). `npm run build` and `npm start` ru
 ```text
 apps/web/              Next.js app, replay assets and demo video
 packages/experiment/   Model, browser task, checkpoints, data and results
-media/post.txt         Draft X post and replies
+media/                 README preview and draft X post
 NOTICE                 Sources, modifications and credits
 ```
 
@@ -34,7 +38,7 @@ The model uses 5,187 neurons from MaleCNS v1.0. Training adjusts gains on 61,210
 
 These are fresh seeds with a fixed vocabulary and engineered text inputs. Shuffled wiring also learns, so this demonstrates internal learning, not an anatomical advantage or general browser ability. Neuron activity comes from the rate simulation; the fly's legs are animated.
 
-[Results chart](packages/experiment/artifacts/performance.png) · [Learning curve](packages/experiment/artifacts/learning-curve.png) · [Audit](packages/experiment/artifacts/plastic/audit.json) · [Video](apps/web/public/assets/fly-browser-demo.mp4)
+[Results chart](packages/experiment/artifacts/performance.png) · [Learning curve](packages/experiment/artifacts/learning-curve.png) · [Audit](packages/experiment/artifacts/plastic/audit.json)
 
 ## Reproduce the experiment
 
