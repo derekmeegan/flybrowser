@@ -1,0 +1,22 @@
+{
+  "shuffled-initial.pt": {
+    "sha256": "38ed645e586fa2feb5673e189e2f09bcc2d982462b5677b56bef2631e988e000",
+    "bytes": 26609965,
+    "gzip_sha256": "8bc2b15883566c8b05a40d3fed9d14d1d45f6229e118359faf2f77725c030252"
+  },
+  "connectome-initial.pt": {
+    "sha256": "c7ffff15292414b5b6f6bce5ef4841e2e8e65cc2b95362c603949f7ee1430157",
+    "bytes": 26610005,
+    "gzip_sha256": "84eb0f9b6e3477147dc8bf73c77f4817e41fd3c996741eaba90351843b2dc890"
+  },
+  "shuffled-trained.pt": {
+    "sha256": "7ab1f8bf38a79bc65e57e8b3c99ff291b9b8c41e39bd1936aca03c5abbefd021",
+    "bytes": 26610029,
+    "gzip_sha256": "1dec95436e892faf605b9014b6101c323b8c9336b804edc544f52ded4861b9a9"
+  },
+  "connectome-trained.pt": {
+    "sha256": "b09e1168356ca3aa9cc2db0260f13e1bf13bb2bb92e0ae1bfaec780765e70827",
+    "bytes": 26610069,
+    "gzip_sha256": "2b5a6e0a2d2ab581f710dfef0a74fc75e46b3e488bc7abbab42a020f3fb5a0ba"
+  }
+}

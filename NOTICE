@@ -1,0 +1,18 @@
+Sources and credits
+
+- MaleCNS v1.0 (https://male-cns.janelia.org/download/) — connectome and neuron positions from FlyEM/HHMI Janelia, Cambridge, MRC LMB, and Google Research. We extracted and normalized a smaller circuit, trained connection gains, and sampled positions for the map. CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/).
+- Flyhard (https://github.com/MarkUnthank/flyhard) by Mark Unthank — neural model core, adapted through our training wrapper. MIT.
+- Flybody (https://github.com/TuragaLab/flybody) by TuragaLab — fly body mesh, simplified and recolored with authored joint animation. Apache 2.0.
+- Stagehand (https://github.com/browserbase/stagehand) by Browserbase — browser control through the Chrome extension and a custom evaluation task. MIT.
+- MuJoCo (https://github.com/google-deepmind/mujoco) — body poses and scene generation.
+- PyTorch (https://github.com/pytorch/pytorch) — neural training and inference.
+- NumPy (https://github.com/numpy/numpy), SciPy (https://github.com/scipy/scipy), and PyArrow (https://github.com/apache/arrow) — connectome data processing.
+- Trimesh (https://github.com/mikedh/trimesh) and Pillow (https://github.com/python-pillow/Pillow) — mesh and image processing.
+- Next.js (https://github.com/vercel/next.js) and React (https://github.com/facebook/react) — the web application.
+- Three.js (https://github.com/mrdoob/three.js) — interactive 3D rendering.
+- Lucide (https://github.com/lucide-icons/lucide) — interface icons.
+- Browserbase design reference (https://github.com/browserbase/skills/blob/main/skills/ui-test/references/design-system.example.md) — colors, typography, and component styling.
+- Inter (https://github.com/rsms/inter) by Rasmus Andersson and JetBrains Mono (https://github.com/JetBrains/JetBrainsMono) by JetBrains — fonts, under SIL OFL 1.1.
+- Matplotlib (https://github.com/matplotlib/matplotlib) — performance charts.
+- FFmpeg (https://github.com/FFmpeg/FFmpeg) — video encoding.
+- Primer Octicons (https://github.com/primer/octicons) by GitHub — GitHub mark, under MIT.

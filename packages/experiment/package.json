@@ -1,0 +1,23 @@
+{
+  "name": "@flybrowser/experiment",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "setup": "python3 scripts/setup.py",
+    "setup:browser": "node scripts/setup-browser.mjs",
+    "arena": "node src/market.mjs",
+    "collect": "node src/collect.mjs 1200",
+    "train": "python3 scripts/run.py train_plastic.py connectome 300",
+    "train:shuffled": "python3 scripts/run.py train_plastic.py shuffled 300",
+    "evaluate": "node src/evaluate_plastic.mjs 200",
+    "audit": "python3 scripts/run.py audit_plastic.py",
+    "evals": "node scripts/run-evals.mjs",
+    "record": "node src/record_plastic.mjs",
+    "charts": "python3 scripts/run.py charts_plastic.py",
+    "export": "python3 scripts/run.py style_assets.py && python3 scripts/run.py export_web_assets.py",
+    "video": "node src/record_web_video.mjs",
+    "pack": "python3 scripts/pack-checkpoints.py",
+    "rebuild-data": "python3 scripts/run.py download_data.py && python3 scripts/run.py prepare_circuit.py"
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "step": 0,
+    "decision_accuracy": 0.3333333333333333,
+    "reward_mse": 1.0162911415100098,
+    "elapsed_s": 0.061747074127197266
+  },
+  {
+    "step": 10,
+    "decision_accuracy": 0.25,
+    "reward_mse": 0.8106502294540405,
+    "elapsed_s": 5.970957040786743
+  },
+  {
+    "step": 20,
+    "decision_accuracy": 0.25,
+    "reward_mse": 0.766817569732666,
+    "elapsed_s": 12.229835033416748
+  },
+  {
+    "step": 30,
+    "decision_accuracy": 0.5,
+    "reward_mse": 0.742046594619751,
+    "elapsed_s": 18.40275287628174
+  },
+  {
+    "step": 40,
+    "decision_accuracy": 0.5,
+    "reward_mse": 0.7272793054580688,
+    "elapsed_s": 24.521801948547363
+  },
+  {
+    "step": 50,
+    "decision_accuracy": 0.5833333333333334,
+    "reward_mse": 0.7118144035339355,
+    "elapsed_s": 30.570226192474365
+  },
+  {
+    "step": 60,
+    "decision_accuracy": 0.6666666666666666,
+    "reward_mse": 0.6995964050292969,
+    "elapsed_s": 36.63699007034302
+  },
+  {
+    "step": 70,
+    "decision_accuracy": 0.6666666666666666,
+    "reward_mse": 0.6886501312255859,
+    "elapsed_s": 42.829997062683105
+  },
+  {
+    "step": 80,
+    "decision_accuracy": 0.75,
+    "reward_mse": 0.6790304183959961,
+    "elapsed_s": 48.97957110404968
+  },
+  {
+    "step": 90,
+    "decision_accuracy": 0.75,
+    "reward_mse": 0.6705923676490784,
+    "elapsed_s": 55.09307527542114
+  },
+  {
+    "step": 100,
+    "decision_accuracy": 0.8333333333333334,
+    "reward_mse": 0.6631069183349609,
+    "elapsed_s": 61.187092304229736
+  },
+  {
+    "step": 110,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.6564604043960571,
+    "elapsed_s": 67.46401810646057
+  },
+  {
+    "step": 120,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.6505403518676758,
+    "elapsed_s": 73.84544396400452
+  },
+  {
+    "step": 130,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.6452480554580688,
+    "elapsed_s": 80.35370898246765
+  },
+  {
+    "step": 140,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.6405026316642761,
+    "elapsed_s": 86.8576180934906
+  },
+  {
+    "step": 150,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.636234700679779,
+    "elapsed_s": 93.51502203941345
+  },
+  {
+    "step": 160,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.6323846578598022,
+    "elapsed_s": 100.14982795715332
+  },
+  {
+    "step": 170,
+    "decision_accuracy": 0.9166666666666666,
+    "reward_mse": 0.628901481628418,
+    "elapsed_s": 106.72906017303467
+  },
+  {
+    "step": 180,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.625741183757782,
+    "elapsed_s": 113.34666585922241
+  },
+  {
+    "step": 190,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6228659152984619,
+    "elapsed_s": 119.86178207397461
+  },
+  {
+    "step": 200,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6202430725097656,
+    "elapsed_s": 126.336660861969
+  },
+  {
+    "step": 210,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6178445816040039,
+    "elapsed_s": 132.91052317619324
+  },
+  {
+    "step": 220,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6156455874443054,
+    "elapsed_s": 139.40051817893982
+  },
+  {
+    "step": 230,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6136249303817749,
+    "elapsed_s": 145.84188508987427
+  },
+  {
+    "step": 240,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6117639541625977,
+    "elapsed_s": 152.2792329788208
+  },
+  {
+    "step": 250,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.61004638671875,
+    "elapsed_s": 158.71357107162476
+  },
+  {
+    "step": 260,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6084579229354858,
+    "elapsed_s": 165.1918921470642
+  },
+  {
+    "step": 270,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6069858074188232,
+    "elapsed_s": 171.68568897247314
+  },
+  {
+    "step": 280,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6056191921234131,
+    "elapsed_s": 178.18364214897156
+  },
+  {
+    "step": 290,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6043480038642883,
+    "elapsed_s": 184.66477990150452
+  },
+  {
+    "step": 300,
+    "decision_accuracy": 1.0,
+    "reward_mse": 0.6031637787818909,
+    "elapsed_s": 191.14549112319946
+  }
+]

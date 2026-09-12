@@ -1,0 +1,35 @@
+# Dependencies and local tools
+node_modules/
+.venv/
+vendor/
+__pycache__/
+*.pyc
+
+# Build output and framework-generated agent files
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+AGENTS.md
+CLAUDE.md
+
+# Local configuration and transient output
+.DS_Store
+.env*
+*.log
+*.pem
+*.key
+*.part
+packages/experiment/data/
+packages/experiment/artifacts/fonts/
+packages/experiment/artifacts/lowpoly-meshes/
+packages/experiment/artifacts/mesh-derivation.json
+packages/experiment/artifacts/scene.xml
+packages/experiment/artifacts/screen-texture.png
+packages/experiment/artifacts/scene-preview.png
+packages/experiment/artifacts/web-video-frames/
+packages/experiment/artifacts/video-preview-*.png
+packages/experiment/artifacts/fly-browser-demo.mp4
+packages/experiment/artifacts/plastic/*.pt
+packages/experiment/artifacts/plastic/connectome-activity.npz
+packages/experiment/artifacts/plastic/shuffled-activity.npz

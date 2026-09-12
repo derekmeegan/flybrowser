@@ -1,0 +1,33 @@
+{
+  "passed": true,
+  "training_samples": 1200,
+  "evaluation_episodes": 1000,
+  "neural_decisions_recomputed_and_verified": 1812,
+  "tensor_checks": {
+    "connectome": {
+      "only_KC_to_MBON_gains_changed": true,
+      "frozen_input_output_and_leaks": true,
+      "measured_adjacency_unchanged": true,
+      "signs_preserved": true,
+      "changed_edges": 61210,
+      "frozen_tensor_count": 13
+    },
+    "shuffled": {
+      "only_KC_to_MBON_gains_changed": true,
+      "frozen_input_output_and_leaks": true,
+      "measured_adjacency_unchanged": true,
+      "signs_preserved": true,
+      "changed_edges": 61210,
+      "frozen_tensor_count": 13
+    }
+  },
+  "initial_equals_reverted_exactly": true,
+  "fresh_seeds_matched_across_conditions": true,
+  "runtime": "Every nonrandom evaluation decision was live recurrent inference. Audit batches identical inputs for numerical comparison.",
+  "checkpoint_sha256": {
+    "connectome-initial.pt": "c7ffff15292414b5b6f6bce5ef4841e2e8e65cc2b95362c603949f7ee1430157",
+    "connectome-trained.pt": "b09e1168356ca3aa9cc2db0260f13e1bf13bb2bb92e0ae1bfaec780765e70827",
+    "shuffled-initial.pt": "38ed645e586fa2feb5673e189e2f09bcc2d982462b5677b56bef2631e988e000",
+    "shuffled-trained.pt": "7ab1f8bf38a79bc65e57e8b3c99ff291b9b8c41e39bd1936aca03c5abbefd021"
+  }
+}

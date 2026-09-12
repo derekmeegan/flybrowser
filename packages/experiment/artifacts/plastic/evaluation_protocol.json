@@ -1,0 +1,16 @@
+{
+  "n": 200,
+  "firstSeed": 3100000,
+  "conditions": [
+    "random",
+    "untrained",
+    "trained",
+    "reverted",
+    "shuffled"
+  ],
+  "layout": "2 columns, shuffled card positions",
+  "selection": "Final 300-update checkpoints fixed before evaluation",
+  "retries": 0,
+  "learningDuringEvaluation": false,
+  "inference": "Live PyTorch recurrent rate simulation for each decision; no response cache"
+}

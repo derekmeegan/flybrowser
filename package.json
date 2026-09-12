@@ -1,0 +1,27 @@
+{
+  "name": "flybrowser",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": ["apps/*", "packages/*"],
+  "engines": { "node": ">=24.18.0" },
+  "scripts": {
+    "dev": "npm run dev --workspace @flybrowser/web",
+    "build": "npm run build --workspace @flybrowser/web",
+    "start": "npm run start --workspace @flybrowser/web",
+    "lint": "npm run lint --workspace @flybrowser/web",
+    "experiment:setup": "npm run setup --workspace @flybrowser/experiment",
+    "experiment:browser": "npm run setup:browser --workspace @flybrowser/experiment",
+    "experiment:collect": "npm run collect --workspace @flybrowser/experiment",
+    "experiment:train": "npm run train --workspace @flybrowser/experiment",
+    "experiment:train:shuffled": "npm run train:shuffled --workspace @flybrowser/experiment",
+    "experiment:evaluate": "npm run evaluate --workspace @flybrowser/experiment",
+    "experiment:audit": "npm run audit --workspace @flybrowser/experiment",
+    "experiment:evals": "npm run evals --workspace @flybrowser/experiment",
+    "experiment:record": "npm run record --workspace @flybrowser/experiment",
+    "experiment:charts": "npm run charts --workspace @flybrowser/experiment",
+    "experiment:export": "npm run export --workspace @flybrowser/experiment",
+    "experiment:video": "npm run video --workspace @flybrowser/experiment",
+    "experiment:pack": "npm run pack --workspace @flybrowser/experiment",
+    "experiment:rebuild-data": "npm run rebuild-data --workspace @flybrowser/experiment"
+  }
+}

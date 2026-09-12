@@ -1,0 +1,45 @@
+{
+  "summary": [
+    {
+      "condition": "random",
+      "n": 200,
+      "successes": 4,
+      "success_rate": 0.02,
+      "mean_steps": 1.35,
+      "mean_elapsed_ms": 21.25
+    },
+    {
+      "condition": "untrained",
+      "n": 200,
+      "successes": 18,
+      "success_rate": 0.09,
+      "mean_steps": 1.53,
+      "mean_elapsed_ms": 78.09
+    },
+    {
+      "condition": "trained",
+      "n": 200,
+      "successes": 200,
+      "success_rate": 1,
+      "mean_steps": 3,
+      "mean_elapsed_ms": 144.605
+    },
+    {
+      "condition": "reverted",
+      "n": 200,
+      "successes": 18,
+      "success_rate": 0.09,
+      "mean_steps": 1.53,
+      "mean_elapsed_ms": 77.135
+    },
+    {
+      "condition": "shuffled",
+      "n": 200,
+      "successes": 200,
+      "success_rate": 1,
+      "mean_steps": 3,
+      "mean_elapsed_ms": 141.96
+    }
+  ],
+  "protocol": "Fresh prespecified seeds; all conditions identical; live neural inference, no retries or updates"
+}

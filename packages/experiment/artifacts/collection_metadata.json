@@ -1,0 +1,8 @@
+{
+  "count": 1200,
+  "elapsed_s": 35.843,
+  "interface": "Stagehand v4 Chrome extension",
+  "policy": "uniform random exploration",
+  "curriculum": "reset equally often to each of 3 phases",
+  "seed": 672
+}

@@ -1,0 +1,21 @@
+MaleCNS — https://male-cns.janelia.org/download/
+Flyhard — https://github.com/MarkUnthank/flyhard
+Flybody — https://github.com/TuragaLab/flybody
+Stagehand — https://github.com/browserbase/stagehand
+MuJoCo — https://github.com/google-deepmind/mujoco
+PyTorch — https://github.com/pytorch/pytorch
+NumPy — https://github.com/numpy/numpy
+SciPy — https://github.com/scipy/scipy
+PyArrow — https://github.com/apache/arrow
+Trimesh — https://github.com/mikedh/trimesh
+Pillow — https://github.com/python-pillow/Pillow
+Next.js — https://github.com/vercel/next.js
+React — https://github.com/facebook/react
+Three.js — https://github.com/mrdoob/three.js
+Lucide — https://github.com/lucide-icons/lucide
+Browserbase — https://github.com/browserbase/skills/blob/main/skills/ui-test/references/design-system.example.md
+Inter — https://github.com/rsms/inter
+JetBrains Mono — https://github.com/JetBrains/JetBrainsMono
+Matplotlib — https://github.com/matplotlib/matplotlib
+FFmpeg — https://github.com/FFmpeg/FFmpeg
+Primer Octicons — https://github.com/primer/octicons

@@ -1,0 +1,32 @@
+Post (attach the demo video)
+
+i trained a simulated fly circuit to use a browser.
+
+5,187 neurons. 61,210 internal connections learning. Stagehand. one banana.
+
+9% → 100% on a tiny 3-step task.
+reset the learned connections: back to 9%.
+
+will work for bananas.
+
+Results reply
+
+200 fresh browser episodes per condition.
+
+shuffled wiring also reached 100%, so this shows internal learning—not a biological wiring advantage.
+
+fixed vocabulary + engineered inputs/outputs. browser decisions; animated fly legs. a small circuit, not a whole-brain emulation.
+
+Attribution reply
+
+Built with MaleCNS v1.0 anatomy (FlyEM/Janelia, Cambridge, MRC LMB & Google; CC BY 4.0), Flyhard's network core, Flybody and Stagehand.
+
+We extracted a circuit, modeled its dynamics and trained connection gains.
+https://male-cns.janelia.org/download/
+https://creativecommons.org/licenses/by/4.0/
+
+Research follow-up
+
+The browser encoder and output decoder stayed frozen. Only gains on existing Kenyon-cell → mushroom-body-output connections changed.
+
+Training reused 1,200 browser rewards for 300 gradient updates. During evaluation, the neural circuit ran live for every decision.

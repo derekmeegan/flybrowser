@@ -1,0 +1,21 @@
+{
+  "stagehand": {
+    "repository": "https://github.com/browserbase/stagehand.git",
+    "commit": "b771930d2b4d858e5bd9670203c66260b385a8fa",
+    "license": "MIT"
+  },
+  "flybody": {
+    "repository": "https://github.com/TuragaLab/flybody.git",
+    "commit": "d015e9bfe441bd90ae431bac24c55cb74bdbce26",
+    "license": "Apache-2.0"
+  },
+  "flyhard": {
+    "repository": "https://github.com/MarkUnthank/flyhard.git",
+    "commit": "bad2131a35518944834531f53be004e9f1b9eecb",
+    "license": "MIT",
+    "upstream_path": "src/flyhard/connectome.py",
+    "vendored_path": "third_party/flyhard/connectome.py",
+    "modifications": "None; wrapped by src/plastic_model.py",
+    "sha256": "34c2f69386c1f56791724337ac4ee2e1dda168d20c4a46a94d6bc67641335d63"
+  }
+}

@@ -1,0 +1,7 @@
+apps/web/public/assets/** linguist-generated=true
+packages/experiment/artifacts/** linguist-generated=true
+packages/experiment/checkpoints/** linguist-generated=true
+*.bin binary
+*.feather binary
+*.npz binary
+*.pt.gz binary
